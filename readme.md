@@ -11,9 +11,9 @@ Remember that the code provided here was written for exactly the files I worked 
     - `-x`: Path to the original `.xml`-file
     - `-t`: Path to target-file (brat is only going to open it if it has the suffix `.txt`)
 
-2. Annotate the textfile in brat. If its done online, enter only one character as the title when asked to specify. The online version includes the title in the document, and counts it when writing the position of the annotation in the standoff-file. Later in the pipeline, we therefore need to specify if we've annotated on the brat-website or locally.
+2. Annotate the textfile in brat. If its done online, enter only one character as the title when asked to specify. The online version includes the title in the document, and counts it when writing the positions of the annotations. Later in the pipeline, we therefore need to specify if we've annotated on the brat-website or locally.
 
-3. Get the `.ann`-file with all the annotations and save it. Run the *(at this point hopefully completely debugged)* `reintegrate_annotation.py` to get back the original XML-format, but now with the annotations. The following arguments need to be specified:
+3. Get the `.ann`-file with all the annotations and save it. Run the *(at this point hopefully completely debugged)* `reintegrate_annotation.py` to get the original XML-format, but now with the annotations. The following arguments need to be specified:
 
     - `-x`: Path to the original `.xml`-file
     - `-t`: Path to the `.txt`-file that was used to annotate
